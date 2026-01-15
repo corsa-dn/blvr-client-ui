@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  /* Brand palette wired to Nuxt UI tokens */
+  --ui-color-primary-50: #f3f7fc;
+  --ui-color-primary-100: #e7eef7;
+  --ui-color-primary-200: #c9dbee;
+  --ui-color-primary-300: #9abedf;
+  --ui-color-primary-400: #639acd;
+  --ui-color-primary-500: #172740;
+  --ui-color-primary-600: #2f649a;
+  --ui-color-primary-700: #27517d;
+  --ui-color-primary-800: #234467;
+  --ui-color-primary-900: #223b58;
+  --ui-color-primary-950: #17263a;
+  --ui-primary: var(--ui-color-primary-500);
+
+  --color-brand: #172740;
+  --color-secondary: rgba(#172740, 0.5);
+  --color-accent-primary: #234467;
+  --color-accent-secondary: #3f75a3;
+  --color-accent-secondary-hover: #4894c4;
+  --color-accent-light: #e5ebf4;
+  --color-border-color: #ebebee;
+  --color-light-gray: #f4f5fa;
+  --color-bg-gray: #f7f8fd;
+  --color-accent-secondary-dm: #48abff;
+}
+
+.bg-light {
+  background-color: #f7f8fd;
+}
+
+:root {
+  --ui-radius: 5px;
+  --ui-header-height: 111px;
+  --font-fallbacks: system-ui, -apple-system, sans-serif;
+  /* Fallbacks when color-mode classes aren't set (SPA/no-SSR) */
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-bg: #fff;
+  --ui-text: #0f172a;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cera Pro", var(--font-fallbacks);
+}
+
+/* primary dark: #172740 */
+/* primary: #234467 */
+/* primary lighter: #3F75A3 */
+/* primary light: #A3CBE5 */
+
+/* sm border-radius: 10px */
+/* md / default border-radius: 20px */
+/* lg border-radius: 30px */
+/* xl border-radius: 40px */
+
+.font-cera {
+  font-family: "Cera Pro", var(--font-fallbacks);
+}
+
+.font-klein {
+  font-family: "Klein", var(--font-fallbacks);
+}
+
+.font-xolonium {
+  font-family: "Xolonium", var(--font-fallbacks);
+}
+
+.card-shadow {
+  box-shadow: 9px 9px 28px rgba(39, 48, 69, 0.11);
+}
