@@ -1,77 +1,75 @@
-# Nuxt Minimal Starter
+# Bulvar Client UI
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Клиентский интерфейс Bulvar на Nuxt 4 с SSR и предрендером отдельных страниц.
 
-## Setup
+## Стек
 
-Make sure to install dependencies:
+- Nuxt 4, Vue 3, TypeScript
+- Nuxt UI, Nuxt Image, Nuxt Fonts
+- Pinia, FormKit Auto Animate
+
+## Требования
+
+- Node.js 18+
+- npm или yarn
+
+## Установка
 
 ```bash
 # npm
 npm install
 
-# pnpm
-pnpm install
-
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Разработка
 
 ```bash
 # npm
 npm run dev
 
-# pnpm
-pnpm dev
-
 # yarn
 yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Сборка и предпросмотр
 
 ```bash
 # npm
 npm run build
-
-# pnpm
-pnpm build
+npm run preview
 
 # yarn
 yarn build
-
-# bun
-bun run build
+yarn preview
 ```
 
-Locally preview production build:
+## Генерация статического сайта
 
 ```bash
 # npm
-npm run preview
-
-# pnpm
-pnpm preview
+npm run generate
 
 # yarn
-yarn preview
-
-# bun
-bun run preview
+yarn generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# blvr-client-ui
-# blvr-client-ui
+## Рендеринг и маршруты
+
+- SSR включен по умолчанию.
+- Предрендер: `/`, `/contacts`.
+- Клиентский рендеринг: `/deals/**`.
+
+## Структура проекта
+
+- `app/` — страницы, компоненты, стили, assets
+- `public/` — статические файлы
+- `nuxt.config.ts` — конфигурация Nuxt, модули и route rules
+
+## Полезные скрипты
+
+- `dev` — запуск дев-сервера
+- `build` — сборка
+- `preview` — локальный предпросмотр сборки
+- `generate` — статическая генерация
